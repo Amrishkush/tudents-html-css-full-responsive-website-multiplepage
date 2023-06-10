@@ -1,0 +1,679 @@
+@font-face {
+    font-family: Antic-regular;
+    src: url(fonts/Antic-Regular.ttf)
+}
+@font-face {
+    font-family: Montserrat-Extralight;
+    src: url(fonts/Montserrat-ExtraLight.ttf);
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: auto;
+    text-align: center;
+    overflow: visible;  /***scroll jo banta h do uske liye body aur container me lagana h*****/ 
+    width: 100%;
+}
+.top-container {
+    background-color: #ffffff;
+    /* background-color: #699bf8; */
+    text-align: center;
+    width: 100%;
+    position: sticky;
+    top: -3rem;
+    z-index: 2;
+}
+section{
+    text-align: center;
+}
+.header{
+    display: inline-block;
+    height: 10rem;
+    width: 126rem;
+    text-align: center; 
+    /* display: flex;    */
+}
+.logo {
+    width: 13%;
+    /* width: 30%; */
+    display: inline-block;
+    margin:  3.3rem auto 2rem 2rem;
+    padding-right: 10%;
+    text-align: left;
+    /* position: absolute;
+    left: 4rem; */
+}
+.logo-img {
+    width: 20rem;
+    /* margin: 8px auto auto auto; */
+    display: inline-block;
+}
+.top-container .social-links{
+    display: inline-block; 
+    padding-left: 5%;
+    /* width: 30%; */
+    vertical-align: top;
+    margin-top: 2rem;
+    /* position: relative; */
+    /* left: 250px; */
+    /* background-color: #c5bebe; */
+    /* background-color: #699bf8; */
+    text-align: center;
+}
+.top-container .social-links ul{
+    display: inline-block;
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    /* margin-left: -90px; */
+    margin-top: 0;
+}
+.top-container .social-links li{
+    display: inline-block;
+    margin: auto 0.2rem auto 0.2rem;   
+}
+.top-container .social-links img{
+    display: inline-block;
+    width: 3rem;
+    /* background-color: #4BA5F9; */
+}
+h3 {
+    color: black;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: Montserrat-Extralight;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.nav-bar{
+    text-align: center;
+    display: inline-block;
+    /* padding-left: 10%; */
+    /* background-color: #4BA5F9; */
+    vertical-align: top;
+    margin-top: 4.4rem;
+    /* width: 40%; */
+}
+.menu{
+    /* position: relative; */
+    display: inline-block;
+    text-align: left;
+    /* right: 380px; */
+}
+.menu-items{
+  color: rgb(8, 8, 8);
+  padding:  0.5rem 1rem 0.5rem 1rem ;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  /* background-color: #4BA5F9; */
+  font-family: Montserrat-Extralight;
+  font-weight: 900;
+  border-radius: 10px;
+}
+ .menu-items a {
+    text-decoration: none;
+    color: rgb(14, 13, 13);
+ }
+ /*If hover is put on <a> then hovering on menu items box will not show effect but coming to <a> will show effect */
+ .menu-items:hover a {               
+     color:#4BA5F9;
+ }
+.menu-items-dropdown{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 16rem;
+    box-shadow: 0px 0.8rem 1.6rem 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .menu-items-dropdown a {
+    color: rgb(70, 67, 67);
+    padding: 1.2rem 1.6rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: block;
+  }
+  .menu-items-dropdown a:hover{
+    background-color: #f1f1f1;
+
+  }
+  .menu:hover .menu-items-dropdown {
+    display: block;
+  }
+  .menu:hover .menu-items {
+    background-color: black;
+    color: #4BA5F9;
+  }
+.middle-container{ 
+    background: linear-gradient(178.04deg, rgba(205, 247, 108, 0) 14.29%, rgba(78, 80, 235, 0.4) 98.35%);
+    height: 80rem;
+    /* background-image: url(images/bg-image.webp);  */    
+    /* opacity: 0.9; */
+    overflow: visible;  
+    position: relative; 
+    text-align: center;
+    width: 100%;
+}
+.middle-container-top{
+    width: 126rem;
+    height: 65rem;
+    text-align: center ;
+    display: inline-block;
+    position: relative;
+    border: 0.2rem solid black;
+    margin: auto;
+}
+.learn-study{
+    position: absolute;
+    left: 0px;
+    top: 4rem;
+    width: 60%;
+    display: block;
+    font-size: 1000%;
+    color: black;
+    margin: auto;
+    text-align: left;
+    /* vertical-align: top; */
+    /* position: relative; */
+    z-index: 1;
+    /* right: 282px; */
+    /* background-color: #4BA5F9; */
+}
+.cartoon-img {
+    position: absolute;
+    right: 0px;
+    top: 2rem;
+}
+.cartoon-img img{
+    width: 50rem;
+    display: block;
+}
+.dreamit {
+    width: 40%;
+    background-color: black;
+    font-size: 3rem;
+    display: block;
+    color: white; 
+    position: absolute;
+    top: 14rem;
+    z-index: 1; 
+    left: 0px;
+    border-radius: 2rem;
+    margin: auto;
+}
+.middle-container .card-master {
+    width: 80rem;
+    display: block;
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    top: 20rem;
+    border-radius: 4rem;
+    /* background-color:rgb(146, 144, 144); */
+    margin: auto;
+}
+.middle-container .card-master .card {
+    display: inline-block;
+    background-color:#d1cccc;;
+    border-radius: 4rem;
+    margin: 2rem;
+    height: 15rem;
+    width: 30rem;
+    text-align: center;
+    position: relative;   /*bahut zaroori hai relative jiske tulna me move krana h varna absolute kaam krega tb jaha bhi koi position hoga usko parent maan lega***/
+}
+.middle-container .card-master .card:hover{
+    background-color: rgb(80, 78, 78);
+}
+.middle-container .card-master .card:hover h2{
+    color: white;
+}
+.middle-container .card-master .card:hover p{
+    color: white;
+}
+.middle-container .card-master .card:hover button{
+    color: white;
+}
+
+.middle-container .card-master .card a{
+    text-decoration: none;
+    color: black;
+}
+.middle-container .card-master .card a h2{
+    margin: 0;
+    padding: 0.5rem ;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right,#409df3, #8722fa  100%);
+    text-align: center;
+    border-bottom-right-radius: 0.8rem;
+    border-bottom-left-radius:  0.8rem;
+    position: relative;
+    z-index: 1;
+}
+.middle-container .card-master .card p{
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    /* position: absolute; */
+    z-index: 1;
+}
+.middle-container .card-master .card button {
+  text-decoration: none;
+  border: none;
+  padding: 1rem 2rem 1rem 2rem;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  background-image: linear-gradient(to right,#ff9234,#fc6274 100%);
+  position: absolute;
+  top: 10rem;
+  left: 17rem;
+  z-index: 1;
+  border-radius: 0.5rem;
+} 
+.middle-container .card-master .card .img {
+    width: 16rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-top-right-radius: 18rem;
+    border-bottom-left-radius: 4rem;
+}
+.middle-container .card-master .card .card1, .card2, .card3, .card4 {
+    display: inline-block;   
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.bottom-container {
+    width: 100%;
+    height: 84.5rem;
+    background-color: rgb(30, 30, 31);
+    margin: auto;
+    text-align: center;   
+}
+.quote {
+    width: 126rem;
+    height: 33rem;
+    /* padding-top: 10rem;
+    padding-bottom: 10rem; */
+    margin: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: linear-gradient(178.04deg, rgba(186, 187, 241, 0.4) 14.29%, rgba(205, 247, 108, 0) 98.35%);
+    /* background-image: url(images/bracket.png); */
+    background-position: center;
+    /* background-size: 130rem; */
+    /* background-repeat: no-repeat; */
+    /* background-color: beige; */
+}
+.quote img{
+    width: 22rem;
+    background-image: none;
+    margin: 5.5rem 1rem;
+   } 
+.bottom-container .content-heading{
+    width: 126rem;
+    margin: auto;
+    /* padding: 5rem; */
+    font-family: Montserrat-Extralight;
+    color: white;
+    font-weight: 150%;
+    font-size: 250%;
+    text-align: center;
+}
+.content-item{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 126rem;
+}
+.column{
+    width: 33.33%;
+}
+.column .column-heading{
+    text-align: left;
+    font-size: 2rem;
+    color: #ffbb00;
+}
+.column ul {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.column li{
+    list-style-type: none;
+    padding: 0;
+    padding-top: 5px;
+    padding-right: 5px;
+    margin: 0;
+}
+.column li a {
+    text-decoration: none;
+    color: white;
+    /* padding-top: 0.5rem;
+    padding-right: 0.5rem;  */
+}
+.footer{
+    /* padding: 2rem; */
+    width: 126rem;
+    margin: 5rem auto auto auto;
+    display: flex;
+}
+.footer .footer-detail {
+    display: inline-block;
+    width: 33.33%;
+    text-align: left;
+}
+.footer .logo {
+    width: 33.33%;
+    vertical-align: top;
+    padding-right: 0px;
+    margin-left: 0px;
+}
+.footer .footer-detail ul{
+    display: inline-block;
+    list-style-type: none;
+    text-align: left;
+}
+.footer .footer-detail a{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-size: 1.6rem;
+    font-family: Montserrat-Extralight;
+}
+.footer .social-links{
+    display: inline-block; 
+    width: 33.33%;
+    vertical-align: top;
+}
+.footer .social-links h3 {
+    color: #ffbb00;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: Montserrat-Extralight;
+    font-size: 1.5rem;
+}
+.footer .social-links ul{
+    display: inline-block;
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    /* margin-left: -10rem; */
+    margin-top: 0;
+}
+.footer .social-links li{
+    display: inline-block;
+    margin: auto 0.2rem auto 0.2rem;
+    
+}
+.footer .social-links img{
+    display: inline-block;
+    width: 3rem;
+}
+/************************************ Classes.html  ****************************************************************/
+.middle-container{
+    height: 80rem;
+}
+.middle-container .card-master1 .card {
+    display: inline-block;
+    background-color:#f2f2f2;
+    margin: 2rem;
+    height: 30rem;
+    width: 40%;
+    text-align: left;
+    position: relative;   /*bahut zaroori hai relative jiske tulna me move krana h varna absolute kaam krega tb jaha bhi koi position hoga usko parent maan lega***/
+}
+.middle-container .card-master1 .card:hover{
+    background-color: rgb(80, 78, 78);
+}
+.middle-container .card-master1 .card:hover h2{
+    color: white;
+}
+.middle-container .card-master1 .card:hover p{
+    color: white;
+}
+.middle-container .card-master1 .card:hover button{
+    color: white;
+}
+
+.middle-container .card-master1 .card a{
+    text-decoration:none;
+    color: black;
+}
+.middle-container .card-master1 .card a h2{
+    margin: 0;
+    padding: 0.5rem ;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right,#409df3, #8722fa  100%);
+    text-align: center;
+    border-bottom-right-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+    position: relative;
+}
+.middle-container .card-master1 .card p{
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.middle-container .card-master1 .card button {
+  text-decoration: none;
+  border: none;
+  padding: 1rem 2rem 1rem 2rem;
+  color: black;
+  font-size: 2rem;
+  font-weight: bolder;
+  background-image: linear-gradient(to right,#ff9234,#fc6274 100%);
+  position: relative;
+  top: 13.5rem;
+  left: 37.5rem;
+  border-radius: 0.5rem;
+} 
+.middle-container .card-master1 .card .img {
+    width: 32rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-top-right-radius: 18rem;
+}
+.middle-container .card-master1 .card .card1, .card2, .card3, .card4{
+    display: inline-block;   
+}
+
+/***************************notes.html**************************/
+.middle-container .card-master2 .card {
+    display: inline-block;
+    background-color:#f2f2f2;
+    margin: 2rem;
+    height: 15rem;
+    width: 25rem;
+    /* text-align: left; */
+    text-align: center;
+    position: relative;   /*bahut zaroori hai relative jiske tulna me move krana h varna absolute kaam krega tb jaha bhi koi position hoga usko parent maan lega***/
+}
+.middle-container .card-master2 .card:hover{
+    background-color: rgb(80, 78, 78);
+}
+.middle-container .card-master2 .card:hover h2{
+    color: white;
+}
+.middle-container .card-master2 .card:hover p{
+    color: white;
+}
+.middle-container .card-master2 .card:hover button{
+    color: white;
+}
+
+.middle-container .card-master2 .card a{
+    text-decoration:none;
+    color: black;
+}
+.middle-container .card-master2 .card a h2{
+    margin: 0;
+    padding: 0.5rem ;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right,#409df3, #8722fa  100%);
+    text-align: center;
+    border-bottom-right-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+    position: relative;
+}
+.middle-container .card-master2 .card p{
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.middle-container .card-master2 .card button {
+  text-decoration: none;
+  border: none;
+  padding: 1rem 2rem 1rem 2rem;
+  color: black;
+  font-size: 2rem;
+  font-weight: bolder;
+  background-image: linear-gradient(to right,#ff9234,#fc6274 100%);
+  position: relative;
+  /* top: 135px;
+  left: 375px; */
+  border-radius: 0.5rem;
+} 
+.middle-container .card-master2 .card .img {
+    width: 32rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-top-right-radius: 18rem;
+}
+.middle-container .card-master2 .card .card1, .card2, .card3, .card4{
+    display: inline-block; 
+}
+/***********************************card1-notes.html****************************/
+.subjectwise-download-links {
+    text-align: center;
+    display: block;
+    margin: 0.5rem;
+}
+.chapterwise-download-links {
+    display: inline-block;
+    text-align: left;
+    border: 0.2rem solid black;
+    color:#409df3; 
+    border-radius: 1rem;
+    width: 20rem;
+}
+.chapterwise-download-links li {
+    padding: 0.5rem;
+} 
+.chapterwise-download-links li a {
+    color:#409df3;
+}
+.content-item .item img {
+    width: 22rem;
+}
+
+/***********************************Media queries***************************************************************/
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+    .middle-container-top{
+        position: relative;  
+        top: 5rem;
+        width: 90rem;
+    }
+    .quote, .header, .footer, .content-item{
+        width: 90rem;
+    }
+    .bottom-container .content-heading{
+        width: 90rem;
+    }
+    .middle-container .card-master{
+        position: relative;  
+        top: 5rem;
+    }
+    .learn-study{
+        position: static;
+        margin-top: 5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .dreamit{
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+     .cartoon-img {
+        display: none;
+    }
+    .quote img{
+        width: 18rem;
+        background-image: none;
+        margin: 7.5rem 1.5rem;
+    }
+}
+@media (max-width: 768px){ 
+    html{
+        font-size: 42%;
+    }
+    .middle-container{
+        width: 100%;
+    }
+    .social-links img{
+        width: 3rem;
+    }
+    .learn-study, .dreamit {
+        width: 100%;
+        text-align: center;
+        /* position: relative; */
+    }
+    .bottom-container{
+      text-align: center;
+    }
+}
+@media (max-width: 606px){
+    .top-container, .middle-container, .bottom-container{
+        width: 90rem;
+    }
+}
+@media (max-width: 490px){
+    html{
+        font-size: 38%;
+    }
+    .middle-container-top, .header, .quote, .footer, .content-item, .bottom-container, .middle-container, .top-container{
+        width: 80rem;
+    }
+    .bottom-container .content-heading{
+        width: 80rem;
+    }
+    /* .bottom-container .content-item{
+        display: block;
+
+    } */
+    /* .content-heading h2 {
+        width: 70rem;
+    } */
+    .learn-study, .dreamit {
+        width: 100%;
+        text-align: center;
+    }
+   .quote img{
+    width: 16rem;
+    background-image: none;
+    margin: 7.5rem 1rem;
+   } 
+}
